@@ -4,17 +4,26 @@
 body {
   background-color: white;
   color: black;
+  margin: 30px;
 }
 
 form {
-  width: 40%;
+  width: 45%;
   margin: 20px;
   padding: 50px;
   background: #DFDFDF;
   border-radius: 5%;
 }
 
-button {
-  width: 410px;
-  background-color: #008000;
+#get-lyrics {
+  width: 447px;
+  background: #008000;
+  font-weight: bold;
+  border: none;
+  margin-top: 15px;
+}
+
+.form-group {
+  font-weight: bold;
+  padding-top: 15px;
 }
