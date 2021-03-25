@@ -3,10 +3,14 @@
 import 'bootstrap'; // import bootstrap elements and js
 
 import '../styles/main.scss';
+import lyricsForm from './components/form';
 import domBuilder from './helpers/domBuilder';
+import domEvents from './helpers/domEvents';
 
 const init = () => {
- domBuilder();
+  domBuilder();
+  lyricsForm();
+  domEvents();
 };
 
 init();

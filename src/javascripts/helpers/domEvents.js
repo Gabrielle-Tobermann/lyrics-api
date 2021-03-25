@@ -1,13 +1,18 @@
-import getLyrics from "./lyricsData"
+import showLyrics from '../components/lyrics';
+import getLyrics from './lyricsData';
 
 const domEvents = () => {
   document.querySelector('body').addEventListener('click', (e) => {
-    if (e.target.dispatchEvent.includes('get-lyrics')) {
+    if (e.target.id.includes('get-lyrics')) {
+      e.preventDefault();
+      console.warn('button');
       const obj = {
         artist: document.querySelector('#artist').value,
-        song: document.querySelector('#cong').value
-      }
-      getLyrics(obj.artist, obj.song).then(())
+        song: document.querySelector('#song').value
+      };
+      getLyrics(obj.artist, obj.song).then((lyrics) => showLyrics(lyrics));
     }
-  })
-}
+  });
+};
+
+export default domEvents;
