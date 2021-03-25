@@ -3,13 +3,10 @@
 import 'bootstrap'; // import bootstrap elements and js
 
 import '../styles/main.scss';
+import domBuilder from './helpers/domBuilder';
 
 const init = () => {
-  document.querySelector('#app').innerHTML = '<h1>HELLO! You are up and running!</h1>';
-  console.warn('YOU ARE UP AND RUNNING!');
-
-  // USE WITH FIREBASE AUTH
-  // checkLoginStatus();
+ domBuilder();
 };
 
 init();
