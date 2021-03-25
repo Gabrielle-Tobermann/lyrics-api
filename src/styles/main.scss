@@ -2,8 +2,19 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
-  margin-top: 100px;
+  background-color: white;
+  color: black;
+}
+
+form {
+  width: 40%;
+  margin: 20px;
+  padding: 50px;
+  background: #DFDFDF;
+  border-radius: 5%;
+}
+
+button {
+  width: 410px;
+  background-color: #008000;
 }

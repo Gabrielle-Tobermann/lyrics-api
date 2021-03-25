@@ -11,6 +11,7 @@ const domEvents = () => {
         song: document.querySelector('#song').value
       };
       getLyrics(obj.artist, obj.song).then((lyrics) => showLyrics(lyrics));
+      document.querySelector('form').reset();
     }
   });
 };
