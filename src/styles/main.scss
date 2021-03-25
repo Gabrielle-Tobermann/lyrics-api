@@ -2,8 +2,28 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
-  margin-top: 100px;
+  background-color: white;
+  color: black;
+  margin: 30px;
+}
+
+form {
+  width: 30%;
+  margin: 20px;
+  padding: 50px;
+  background: #DFDFDF;
+  border-radius: 5%;
+}
+
+#get-lyrics {
+  width: 100%;
+  background: #008000;
+  font-weight: bold;
+  border: none;
+  margin-top: 15px;
+}
+
+.form-group {
+  font-weight: bold;
+  padding-top: 15px;
 }
